@@ -1,0 +1,58 @@
+{
+  "mercury": {
+    "name": "Mercury",
+    "tagline": "Smallest and closest to the Sun",
+    "description": "A rocky, cratered world with extreme temperature swings.",
+    "image": "assets/planets/mercury.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+  },
+  "venus": {
+    "name": "Venus",
+    "tagline": "Earth’s scorching twin",
+    "description": "Thick clouds and a runaway greenhouse effect make it the hottest planet.",
+    "image": "assets/planets/venus.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Venus"
+  },
+  "earth": {
+    "name": "Earth",
+    "tagline": "Our home world",
+    "description": "The only known planet with liquid water on the surface and life.",
+    "image": "assets/planets/earth.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Earth"
+  },
+  "mars": {
+    "name": "Mars",
+    "tagline": "The Red Planet",
+    "description": "Dusty deserts, polar ice caps, and the largest volcano in the solar system.",
+    "image": "assets/planets/mars.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Mars"
+  },
+  "jupiter": {
+    "name": "Jupiter",
+    "tagline": "Giant of the solar system",
+    "description": "A gas giant with powerful storms like the Great Red Spot.",
+    "image": "assets/planets/jupiter.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  "saturn": {
+    "name": "Saturn",
+    "tagline": "The ringed world",
+    "description": "Known for its spectacular ring system made of ice and rock.",
+    "image": "assets/planets/saturn.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Saturn"
+  },
+  "uranus": {
+    "name": "Uranus",
+    "tagline": "The tilted ice giant",
+    "description": "Rotates on its side; a cold world with faint rings and many moons.",
+    "image": "assets/planets/uranus.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Uranus"
+  },
+  "neptune": {
+    "name": "Neptune",
+    "tagline": "Farthest known planet",
+    "description": "An ice giant with supersonic winds and deep blue clouds.",
+    "image": "assets/planets/neptune.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Neptune"
+  }
+}
