@@ -9,96 +9,44 @@
 <body>
 
     <div class="solarSystem">
-
-
-
-      <div class="sun"></div>
-       <div class="orbit mercury-orbit">
-  <div 
-    class="planet mercury" 
-    data-name="Mercury" 
-    data-info="Mercury is the closest planet to the Sun." 
-    data-link="https://en.wikipedia.org/wiki/Mercury_(planet)">
-  </div>
-</div>
-
-<div class="orbit venus-orbit">
-  <div 
-    class="planet venus" 
-    data-name="Venus" 
-    data-info="Venus is the second planet from the Sun." 
-    data-link="https://en.wikipedia.org/wiki/Venus">
-  </div>
-</div>
-
-<div class="orbit earth-orbit">
-  <div 
-    class="planet earth" 
-    data-name="Earth" 
-    data-info="Earth is the third planet from the Sun." 
-    data-link="https://en.wikipedia.org/wiki/Earth">
-  </div>
-</div>
-
-<div class="orbit mars-orbit">
-  <div 
-    class="planet mars" 
-    data-name="Mars" 
-    data-info="Mars is the fourth planet from the Sun, known as the Red Planet." 
-    data-link="https://en.wikipedia.org/wiki/Mars">
-  </div>
-</div>
-
-<div class="orbit jupiter-orbit">
-  <div 
-    class="planet jupiter" 
-    data-name="Jupiter" 
-    data-info="Jupiter is the largest planet in the Solar System." 
-    data-link="https://en.wikipedia.org/wiki/Jupiter">
-  </div>
-</div>
-
-<div class="orbit saturn-orbit">
-  <div 
-    class="planet saturn" 
-    data-name="Saturn" 
-    data-info="Saturn is known for its prominent ring system." 
-    data-link="https://en.wikipedia.org/wiki/Saturn">
-  </div>
-</div>
-
-<div class="orbit uranus-orbit">
-  <div 
-    class="planet uranus" 
-    data-name="Uranus" 
-    data-info="Uranus rotates on its side and is an ice giant." 
-    data-link="https://en.wikipedia.org/wiki/Uranus">
-  </div>
-</div>
-
-<div class="orbit neptune-orbit">
-  <div 
-    class="planet neptune" 
-    data-name="Neptune" 
-    data-info="Neptune is the farthest planet from the Sun." 
-    data-link="https://en.wikipedia.org/wiki/Neptune">
-  </div>
-</div>
-
-
-      
+<div class="sun"></div>
+ <div class="orbit earth-orbit">
+  <div class="planet earth" ></div>
+    </div>
  </div>
+
+
  <div class="heading">
     <h1 class="welcome-text">Welcome to the Solar Family</h1>
 
-    <div id="infoBox" class="info-box hidden">
-  <h2 id="planetName"></h2>
-  <p id="planetInfo"></p>
-  <a id="planetLink" href="#" target="_blank">More on Wikipedia</a>
-</div>
+    
+    <div class ="image-resizer">
+          <img src="info.jpg" alt="#" class="solar-image">
+          <div class="btn">
+          <button id="btn1" onclick="zoomIn()">ZoomIn</button>
+          <button id="btn2" onclick="zoomOut()">ZoomOut</button>
+          </div>
+    </div>
+    
 
+    <div class="infobox">
+  <div class="side-design">
+    <h2>Solar System Facts</h2>
+    <img id="planetImage" src="#" alt="Planet Image" />
+  </div>
 
- </div>
+  <div class="information">
+    <div class="search-info">
+      <input id="s" type="text" placeholder="Search for a planet..." />
+      <button id="searchbtn" onclick="searchPlanet()">Click</button>
+    </div>
+    <h3 id="planetName"></h3>
+    <p id="planetTagline"></p>
+    <p id="planetDescription"></p>
+    <a id="planetWiki" href="#" target="_blank"></a>
+  </div>
+
+ 
 
  
 
