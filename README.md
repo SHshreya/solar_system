@@ -1,20 +1,69 @@
-# 🌌 Interactive Solar System
+Here's a simple and effective `README.md` file you can use for your GitHub repository:
 
-This project is a **responsive and interactive web page** that displays the planets in the Solar System. Each planet is shown with an image, and clicking on any planet opens a popup that shows key information about it, including a Wikipedia link.
+---
 
-## 🚀 Features
+```markdown
+# 🌌 Planet Explorer
 
-- Visual display of all 8 planets with images.
-- Responsive layout for desktop and mobile.
-- Click on any planet to view:
+A simple, interactive web app that lets you search for planets (like Earth, Mars, etc.) and view their image, tagline, description, and a Wikipedia link — all using local JSON data.
+
+## ✨ Features
+
+- Search for any planet by name
+- View:
   - Planet name
-  - Interesting fact
-  - Link to Wikipedia for more details
+  - Tagline
+  - Description
+  - Image
+  - Wikipedia link (optional)
+- Responsive and clean UI using HTML, CSS, and JavaScript
 
-## 🛠️ Technologies Used
+## 📂 Project Structure
 
-- HTML5
-- CSS3 (with basic responsiveness)
-- JavaScript (Vanilla)
+```
 
+/planet-explorer
+│
+├── index.html       # Main HTML page
+├── style.css        # CSS styling
+├── script.js        # JavaScript logic
+└── planets.json     # Local JSON data containing planet info
 
+````
+
+## 📸 Preview
+
+![Screenshot](preview.png) <!-- Add your screenshot image in the repo -->
+
+## 🧪 How to Use
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/planet-explorer.git
+````
+
+2. Open `index.html` in any browser.
+3. Type a planet name (e.g., `Mars`, `Earth`) and click the **Click** button.
+4. Info will appear with an image and optional link.
+
+## 🧠 Technologies Used
+
+* HTML5
+* CSS3
+* JavaScript (Vanilla)
+* JSON (for local data)
+
+## 📁 Sample `planets.json`
+
+```json
+[
+  {
+    "name": "Mars",
+    "tagline": "The Red Planet",
+    "description": "Mars is the fourth planet from the Sun...",
+    "image": "images/mars.jpg",
+    "wiki": "https://en.wikipedia.org/wiki/Mars"
+  },
+  ...
+]
+```
