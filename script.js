@@ -45,34 +45,70 @@ planets.forEach(planet => {
 });
 
 
-// //const planets = document.querySelectorAll('.planet');
-// const infoBox = document.getElementById('infoBox');
-// const nameElem = document.getElementById('planetName');
-// const infoElem = document.getElementById('planetInfo');
-// const linkElem = document.getElementById('planetLink');
-
-// planets.forEach(planet => {
-//   planet.addEventListener('click', () => {
-//     const name = planet.dataset.name;
-//     const info = planet.dataset.info;
-//     const link = planet.dataset.link;
-
-//     nameElem.textContent = name;
-//     infoElem.textContent = info;
-//     linkElem.href = link;
-
-//     infoBox.classList.remove('hidden');
-//   });
-// });
-
-// // Optional: click outside to hide
-// document.addEventListener('click', (e) => {
-//   if (!e.target.closest('.planet') && !e.target.closest('#infoBox')) {
-//     infoBox.classList.add('hidden');
-//   }
-// });
 
 
+
+
+
+let zoom = 1;
+const minZoom =1;
+const maxZoom =1.3;
+const image = document.getElementsByClassName("solar-image")[0];
+
+function zoomIn() {
+  if(zoom==maxZoom) {// alert("You cannot zoom in further");
+    alert("You cannot zoom in further");
+    return;
+  }
+  if(zoom < maxZoom) {// Prevent zooming in beyond maxZoom
+  zoom = Math.min(maxZoom, zoom + 0.1);
+  // Ensure zoom does not go below minZoom
+  image.style.transform = `scale(${zoom})`;
+  }
+}
+
+function zoomOut() {
+  if(zoom==minZoom) {// alert("You cannot zoom out further");
+    alert("You cannot zoom out further");
+    return;
+  }
+  if(zoom> minZoom){
+  zoom = Math.max(1, zoom - 0.1);
+  image.style.transform = `scale(${zoom})`;
+  }
+}
+
+
+
+
+
+//fetching
+let planetsData = {};
+
+
+window.onload = async function () {
+  const response = await fetch('planets.json');
+  planetsData = await response.json();
+};
+
+function searchPlanet() {
+  const input = document.getElementById("s").value.trim().toLowerCase();
+  const planet = planetsData[input];
+
+  if (!planet) {
+    alert("Planet not found!");
+    return;
+  }
+
+  // Populate info
+  document.getElementById("planetName").textContent = planet.name;
+  document.getElementById("planetTagline").textContent = planet.tagline;
+  document.getElementById("planetDescription").textContent = planet.description;
+  document.getElementById("planetImage").src = planet.image;
+  document.getElementById("planetWiki").href = planet.wiki;
+   document.getElementById("planetWiki").textContent = "More on Wikipedia";
+
+}
 
 
 
